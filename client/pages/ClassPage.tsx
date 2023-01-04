@@ -63,6 +63,10 @@ const ClassPage = () => {
   return (
     <Layout>
       <h1 className="title">My Classes</h1>
+      <button className="bg-indigo-500 hover:bg-blue-700 rounded">
+        Tailwind CSS button
+      </button>
+
       <Button onClick={handleShow}>Add a Class</Button>
       <Modal
         opened={isAddAClassModalOpened}
@@ -136,10 +140,9 @@ const ClassPage = () => {
               // Clear form after
               setForm(new Map());
               console.log(classes);
-              setIsAddAClassModalOpened(false)
+              setIsAddAClassModalOpened(false);
             } else {
-              
-              console.log("ALLERRT, need to code up for later")
+              console.log("ALLERRT, need to code up for later");
 
               // <Alert
               //   title="You didn't fill out all the fields!"
