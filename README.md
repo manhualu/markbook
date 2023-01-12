@@ -12,6 +12,20 @@ So then I created a very simple command-line argument program to add the total e
 
 Once this project is properly developed, maybe I could even deploy it and use it at a bigger scale i.e. give to my colleagues to use for their students : )
 
+## Tech Stack
+
+### Frontend
+- Next.js
+- TypeScript
+- React
+- Tailwind
+- Radix UI
+
+### Backend
+- Nest.js 
+- PostgreSQL
+- Prisma
+
 ## How to run the Markbook on your Local Machine
 
 ...
