@@ -153,6 +153,24 @@ input {
   box-shadow: 0 0 0 2px var(--violet8);
 }
 
+
+.Card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  height: 200px;
+  background-color: var(--violet4);
+  padding: 20px;
+  outline: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.Card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 @keyframes overlayShow {
   from {
     opacity: 0;

@@ -16,6 +16,12 @@ const ClassPage = () => {
       start: "3:00",
       end: "4:45",
     },
+    // {
+    //   grade: 8,
+    //   day: "Sunday",
+    //   start: "1:00",
+    //   end: "3:45",
+    // },
   ];
 
   return (
@@ -25,11 +31,9 @@ const ClassPage = () => {
       </Head>
 
       <div className="flex justify-between p-4">
-        <span className="text-2xl font-semibold underline">My Classes</span>
-        {/* <button className="border">add a class (to make a component)</button> */}
+        <span className="text-2xl font-bold underline">My Classes</span>
         <AddClassButton />
       </div>
-
       <h1 className="p-4">
         click{" "}
         <Link href="/">
@@ -37,6 +41,18 @@ const ClassPage = () => {
         </Link>{" "}
         to go back to home page
       </h1>
+
+      {/* class cards */}
+      <div className="flex justify-between space-x-10 p-4">
+        {mockClasses.map((elem) => (
+          <div className="Card rounded">
+            <div className="flex justify-center p-4">
+              <h1 className="text-xl font-bold">{`Y${elem.grade} ${elem.day} ${elem.start} - ${elem.end}`}</h1>
+            </div>
+            <div className="flex justify-center">7 students</div>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
